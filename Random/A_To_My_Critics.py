@@ -1,8 +1,5 @@
 def main(a, b, c):
-    if a+b >= 10 or a+c >= 10 or b+c >= 10:
-        return("YES")
-    else:
-        return("NO")
+    return("YES" if ((a+b+c - min(a,b,c))>=10) else "NO")
 
 t = int(input())
 for _ in range(t):
