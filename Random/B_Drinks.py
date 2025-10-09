@@ -1,0 +1,5 @@
+n = int(input())
+orange_percentages = list(map(int, input().split()))
+orange_strength = sum(orange_percentages)
+final = (orange_strength / n)
+print(final)
